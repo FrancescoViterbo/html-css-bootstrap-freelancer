@@ -1,0 +1,28 @@
+.navbar {
+    margin-bottom: 0;
+    background-color: #333747;
+    color: white;
+    border: 0; 
+    border-radius: 0;
+}
+
+#jumbo {
+    background-color: #26b58d;
+    color: white;
+}
+
+#about {
+    background-color: #26b58d;
+    color: white;
+}
+
+.centra {
+    text-align: center;
+}
+footer {
+    background-color: darkblue;
+    min-height: 20vh;
+}
+#copyright {
+    background-color: black;
+}
