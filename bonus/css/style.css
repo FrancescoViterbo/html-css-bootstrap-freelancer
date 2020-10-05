@@ -1,9 +1,24 @@
+.centra {
+    text-align: center;
+}
+
+.container {
+    padding: 5rem 0;
+}
+
+nav .container {
+    padding: 0.5rem 0;
+}
+
 .navbar {
     margin-bottom: 0;
-    background-color: #333747;
-    color: white;
-    border: 0; 
+    background-color: #21273d;
+    border: 0;
     border-radius: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+    color: white;
 }
 
 #jumbo {
@@ -11,18 +26,48 @@
     color: white;
 }
 
+#portfolio .row:last-of-type div {
+    padding: 2rem 4rem;
+}
+
+#portfolio .row:last-of-type div:first-of-type {
+
+}
+
 #about {
     background-color: #26b58d;
     color: white;
 }
+#about button {
+    color: white;
+    background-color: #26b58d;
+    border: 1px solid white;
+}
 
-.centra {
-    text-align: center;
-}
 footer {
-    background-color: darkblue;
+    background-color: #4a5787;
     min-height: 20vh;
+    color: white;
 }
+footer a {
+    color: #26b58d;
+}
+
 #copyright {
-    background-color: black;
+    background-color: #21273d;
+    color: white;
+}
+#copyright p {
+    padding: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .extra-padding-left {
+        padding-left: 6rem;
+    }
+    .extra-padding-right {
+        padding-right: 6rem;
+    }
 }
