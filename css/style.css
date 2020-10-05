@@ -1,0 +1,17 @@
+#jumbo {
+    background-color: green;
+}
+#about {
+    background-color: green;
+}
+
+.centra {
+    text-align: center;
+}
+footer {
+    background-color: darkblue;
+    min-height: 20vh;
+}
+#copyright {
+    background-color: black;
+}
