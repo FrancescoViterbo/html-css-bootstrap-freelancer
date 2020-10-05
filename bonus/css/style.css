@@ -12,6 +12,10 @@ body {
     padding: 5rem 0;
 }
 
+.glyphicon {
+    padding: 2rem;
+}
+
 /* NAV SECTION */
 
 nav .container {
@@ -41,12 +45,49 @@ nav li, label {
 
 /* PORTFOLIO SECTION */
 
-#portfolio .row:last-of-type div {
-    padding: 2rem 4rem;
+.skill-image img {
+    border-radius: 50%;
+    padding: 3rem;
+    background: white;
 }
 
-#portfolio .row:last-of-type div:first-of-type {
-
+#portfolio .row:last-of-type>.col-xs-12 {
+    padding: 2rem;
+}
+#portfolio .row:last-of-type>.col-xs-12:first-of-type>.skill-image {
+    background: green;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(2)>.skill-image {
+    background: blue;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(3)>.skill-image {
+    background: orange;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(4)>.skill-image {
+    background: lightblue;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(5)>.skill-image {
+    background: grey;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(6)>.skill-image {
+    background: black;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(7)>.skill-image {
+    background: yellow;
+}
+#portfolio .row:last-of-type>.col-xs-12:last-of-type>.skill-image {
+    background: darkblue;
+}
+.skill-image {
+    padding: 4rem;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.skill-image img {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 /* ABOUT SECTION */
@@ -88,6 +129,21 @@ footer a {
     color: #26b58d;
 }
 
+.contact-icons::after {
+    text-align: center;
+}
+.contact-icon {
+    display: inline-block;
+}
+.contact-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
 #copyright {
     background-color: #21273d;
     color: white;
@@ -101,11 +157,66 @@ footer a {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 992px) {
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
     .extra-padding-left {
         padding-left: 6rem;
     }
     .extra-padding-right {
         padding-right: 6rem;
+    }
+    #avatar {
+        max-width: 450px;
+    }
+    .skill-image img {
+        max-width: 200px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .extra-padding-left {
+        padding-left: 6rem;
+    }
+    .extra-padding-right {
+        padding-right: 6rem;
+    }
+    #avatar {
+        max-width: 350px;
+    }
+    .skill-image img {
+        max-width: 130px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 992px) {
+    #avatar {
+        max-width: 200px;
+    }
+    .skill-image img {
+        max-width: 100px;
+    }
+}
+/* Fixes to extra width */
+
+@media screen and (min-width: 1199px) and (max-width: 1220px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 989px) and (max-width: 1016px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .container {
+        max-width: 90%;
     }
 }
