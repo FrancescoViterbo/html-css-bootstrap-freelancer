@@ -1,3 +1,7 @@
+body {
+    font-size: 20px;
+}
+
 .centra {
     text-align: center;
 }
@@ -21,6 +25,10 @@ nav .container {
     color: white;
 }
 
+nav li {
+    font-size: 14px;
+}
+
 #jumbo {
     background-color: #26b58d;
     color: white;
@@ -38,10 +46,23 @@ nav .container {
     background-color: #26b58d;
     color: white;
 }
-#about button {
+#about button, #contact button {
     color: white;
     background-color: #26b58d;
     border: 1px solid white;
+}
+
+input, textarea {
+    border: 0;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 6rem;
 }
 
 footer {
@@ -58,7 +79,7 @@ footer a {
     color: white;
 }
 #copyright p {
-    padding: 1rem;
+    padding: 2rem;
     margin-block-start: 0;
     margin-block-end: 0;
 }
