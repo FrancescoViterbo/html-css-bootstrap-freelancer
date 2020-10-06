@@ -1,5 +1,9 @@
 /* GENERAL SETTINGS */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-size: 20px;
 }
@@ -14,6 +18,14 @@ body {
 
 .glyphicon {
     padding: 2rem;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #26b58d;
 }
 
 /* NAV SECTION */
@@ -37,6 +49,16 @@ nav li, label {
     font-size: 14px;
 }
 
+.navbar-toggle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button img {
+    width: 30px;
+    height: 20px;
+}
+
 #jumbo {
     padding-top: 5rem;
     background-color: #26b58d;
@@ -53,6 +75,7 @@ nav li, label {
 
 #portfolio .row:last-of-type>.col-xs-12 {
     padding: 2rem;
+    cursor: pointer;
 }
 #portfolio .row:last-of-type>.col-xs-12:first-of-type>.skill-image {
     background: green;
@@ -63,18 +86,18 @@ nav li, label {
 #portfolio .row:last-of-type>.col-xs-12:nth-of-type(3)>.skill-image {
     background: orange;
 }
-#portfolio .row:last-of-type>.col-xs-12:nth-of-type(4)>.skill-image {
+/* #portfolio .row:last-of-type>.col-xs-12:nth-of-type(4)>.skill-image {
     background: lightblue;
-}
+} */
 #portfolio .row:last-of-type>.col-xs-12:nth-of-type(5)>.skill-image {
     background: grey;
 }
 #portfolio .row:last-of-type>.col-xs-12:nth-of-type(6)>.skill-image {
     background: black;
 }
-#portfolio .row:last-of-type>.col-xs-12:nth-of-type(7)>.skill-image {
+/* #portfolio .row:last-of-type>.col-xs-12:nth-of-type(7)>.skill-image {
     background: yellow;
-}
+} */
 #portfolio .row:last-of-type>.col-xs-12:last-of-type>.skill-image {
     background: darkblue;
 }
