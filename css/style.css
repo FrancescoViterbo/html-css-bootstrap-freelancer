@@ -1,17 +1,245 @@
-#jumbo {
-    background-color: green;
+/* GENERAL SETTINGS */
+
+html {
+  scroll-behavior: smooth;
 }
-#about {
-    background-color: green;
+
+body {
+    font-size: 20px;
 }
 
 .centra {
     text-align: center;
 }
-footer {
-    background-color: darkblue;
-    min-height: 20vh;
+
+.container {
+    padding: 5rem 0;
 }
+
+.glyphicon {
+    padding: 2rem;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #26b58d;
+}
+
+/* NAV SECTION */
+
+nav .container {
+    padding: 0.5rem 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #21273d;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+nav li, label {
+    font-size: 14px;
+}
+
+.navbar-toggle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button img {
+    width: 30px;
+    height: 20px;
+}
+
+#jumbo {
+    padding-top: 5rem;
+    background-color: #26b58d;
+    color: white;
+}
+
+/* PORTFOLIO SECTION */
+
+.skill-image img {
+    border-radius: 50%;
+    padding: 3rem;
+    background: white;
+}
+
+#portfolio .row:last-of-type>.col-xs-12 {
+    padding: 2rem;
+    cursor: pointer;
+}
+#portfolio .row:last-of-type>.col-xs-12:first-of-type>.skill-image {
+    background: green;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(2)>.skill-image {
+    background: blue;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(3)>.skill-image {
+    background: orange;
+}
+/* #portfolio .row:last-of-type>.col-xs-12:nth-of-type(4)>.skill-image {
+    background: lightblue;
+} */
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(5)>.skill-image {
+    background: grey;
+}
+#portfolio .row:last-of-type>.col-xs-12:nth-of-type(6)>.skill-image {
+    background: black;
+}
+/* #portfolio .row:last-of-type>.col-xs-12:nth-of-type(7)>.skill-image {
+    background: yellow;
+} */
+#portfolio .row:last-of-type>.col-xs-12:last-of-type>.skill-image {
+    background: darkblue;
+}
+.skill-image {
+    padding: 4rem;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.skill-image img {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+/* ABOUT SECTION */
+
+#about {
+    background-color: #26b58d;
+    color: white;
+}
+#about button, #contact button {
+    color: white;
+    background-color: #26b58d;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+/* CONTACT SECTION */
+
+input, textarea {
+    border: 0;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 8rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #4a5787;
+    min-height: 20vh;
+    color: white;
+}
+footer a {
+    color: #26b58d;
+}
+
+.contact-icons::after {
+    text-align: center;
+}
+.contact-icon {
+    display: inline-block;
+}
+.contact-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
 #copyright {
-    background-color: black;
+    background-color: #21273d;
+    color: white;
+}
+#copyright p {
+    padding: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+    .extra-padding-left {
+        padding-left: 6rem;
+    }
+    .extra-padding-right {
+        padding-right: 6rem;
+    }
+    #avatar {
+        max-width: 450px;
+    }
+    .skill-image img {
+        max-width: 200px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .extra-padding-left {
+        padding-left: 6rem;
+    }
+    .extra-padding-right {
+        padding-right: 6rem;
+    }
+    #avatar {
+        max-width: 350px;
+    }
+    .skill-image img {
+        max-width: 130px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 992px) {
+    #avatar {
+        max-width: 200px;
+    }
+    .skill-image img {
+        max-width: 100px;
+    }
+}
+/* Fixes to extra width */
+
+@media screen and (min-width: 1199px) and (max-width: 1220px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 989px) and (max-width: 1016px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .container {
+        max-width: 90%;
+    }
 }
